@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_image_border"
+        android:layout_centerInParent="true"
+        android:elevation="8dp"
+        android:padding="16dp"
+        android:clipToPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Select Itinerary"
+            style="@style/SmallHeaderStyle"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="No itineraries where found for this location.\n\nDo you want to add it to favorites?"
+            style="@style/TextStyle"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/addFavBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:text="Add to favorites"
+            android:drawableLeft="@drawable/ic_favorite"
+            android:padding="8dp"/>
+
+        <!-- RecyclerView to display itineraries -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itineraryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

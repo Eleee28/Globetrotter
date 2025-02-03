@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- My colors -->
+    <color name="colorBackground">#f7f7f7</color>
+    <color name="colorDarkBackground">#000000</color>
+    <color name="colorText">#3a3a3a</color>
+    <color name="colorPrimary">#4fc4fc</color>
+    <color name="colorSecondary">#994ff3</color>
+    <color name="colorTertiary">#fbdd74</color>
+    <color name="colorError">#ff4747</color>
+    <color name="colorOk">#4ed34e</color>
+
+</resources>

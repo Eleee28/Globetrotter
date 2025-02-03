@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reference: From Google Icons @https://fonts.google.com/icons -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/iconColor">
+    <path
+        android:fillColor="@color/colorText"
+        android:pathData="M19.6,21L13.3,14.7Q12.55,15.3 11.575,15.65Q10.6,16 9.5,16Q6.775,16 4.8875,14.1125Q3,12.225 3,9.5Q3,6.775 4.8875,4.8875Q6.775,3 9.5,3Q12.225,3 14.1125,4.8875Q16,6.775 16,9.5Q16,10.6 15.65,11.575Q15.3,12.55 14.7,13.3L21,19.6L19.6,21ZM9.5,14Q11.375,14 12.6875,12.6875Q14,11.375 14,9.5Q14,7.625 12.6875,6.3125Q11.375,5 9.5,5Q7.625,5 6.3125,6.3125Q5,7.625 5,9.5Q5,11.375 6.3125,12.6875Q7.625,14 9.5,14Z"/>
+</vector>
+<!-- Reference complete -->

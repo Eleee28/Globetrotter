@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Application Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowBackground">@color/colorBackground</item>
+
+        <item name="android:textColorPrimary">@color/colorText</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorDarkBackground</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorTertiary">@color/colorTertiary</item>
+
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Custom Text Style -->
+    <style name="TextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="HeaderStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SmallHeaderStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ErrorTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:drawableStart">@drawable/ic_error</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:background">@drawable/rounded_background</item>
+    </style>
+
+</resources>

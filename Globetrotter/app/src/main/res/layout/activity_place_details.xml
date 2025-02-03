@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/placeImage"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_image_border"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/placeName"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Place Name"
+        style="@style/HeaderStyle"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/placeImage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Closed"
+        style="@style/TextStyle"
+        android:background="@drawable/rounded_image_border"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:paddingEnd="16dp"
+        android:elevation="8dp"
+        android:drawableStart="@drawable/ic_dot"
+        android:drawableTint="@color/colorError"
+        android:drawablePadding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/placeImage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/openingHours"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:text="Opening Hours: "
+        style="@style/TextStyle"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/status"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category Name"
+        style="@style/TextStyle"
+        android:background="@drawable/rounded_image_border"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:paddingEnd="16dp"
+        android:elevation="8dp"
+        android:drawableStart="@drawable/ic_attraction"
+        android:drawablePadding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/placeName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Address: "
+        style="@style/TextStyle"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/categoryName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        style="@style/TextStyle"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/address"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/contactHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Information"
+        style="@style/SmallHeaderStyle"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/price"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/contactInfo"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Contact Information: (email, phone)"
+        style="@style/TextStyle"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/contactHeader"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttonGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav" >
+
+        <Button
+            android:id="@+id/addButton"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Itinerary"
+            android:layout_marginRight="40dp"
+            />
+
+        <Button
+            android:id="@+id/mapButton"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:drawableLeft="@drawable/ic_map"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Navigation bar -->
+    <include
+        layout="@layout/bottom_nav"
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

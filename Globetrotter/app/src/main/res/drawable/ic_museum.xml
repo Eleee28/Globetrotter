@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="960"
+    android:viewportHeight="960">
+
+    <!-- Roof -->
+    <path
+        android:fillColor="@color/colorText"
+        android:pathData="M160,300L480,100L800,300H160Z" />
+
+    <!-- Base -->
+    <path
+        android:fillColor="@color/colorText"
+        android:pathData="M200,800H760V740H200V800Z" />
+
+    <!-- Left Column -->
+    <path
+        android:fillColor="@color/colorText"
+        android:pathData="M240,350H320V700H240V400Z" />
+
+    <!-- Left-Center Column -->
+    <path
+        android:fillColor="@color/colorText"
+        android:pathData="M380,350H460V700H380V400Z" />
+
+    <!-- Right-Center Column -->
+    <path
+        android:fillColor="@color/colorText"
+        android:pathData="M520,350H600V700H520V400Z" />
+
+    <!-- Right Column -->
+    <path
+        android:fillColor="@color/colorText"
+        android:pathData="M660,350H740V700H660V400Z" />
+</vector>
+
